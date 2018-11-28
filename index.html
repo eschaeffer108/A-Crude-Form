@@ -1,0 +1,85 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<html lang="en">
+<head>
+<title> Learn how to build a Survey Form</title>
+ <header> <h1 id="title">Learn how to build a survey form</h1>
+</header>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=3">
+  </head>
+
+<div class="container">
+  <h1 id="description" class="description">Instructions</h1>
+  <form id="survey-form" method="GET" action="">
+    
+     <fieldset class="fieldset">
+      <div class="fieldset-group">
+        <label class="left" id="name-label" for="name">Name:</label>
+        <input class="right" type="text" name="name" placeholder="Enter your name" id="name" required>
+      </div>
+       
+      <div class="fieldset-group">
+        <label class="left" id="email-label" for="email">Email:</label>
+        <input class="right" type="email" name="email" placeholder="Enter your email" id="email" required>
+      </div>
+
+    <fieldset class="fieldset">
+      <div class="fieldset-group">
+ <label class="left dropdown"
+ for="dropdown">Which option best describes you?</label>
+<select class="right" id="dropdown" name="dropdown">
+          <option selected disabled >Select an option</option>
+          <option value="student" >University/TAFE Student/Bootcamper</option>
+          <option value="job" >Working Professional</option>
+          <option value="notSay">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </fieldset>
+       
+    <div class="fieldset-group">
+        <label class="center" id="Rating Number"
+               for="rating"> My Form Rating: </label>
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <div class="fieldset-group">
+        <label class="left"> Is this a good practice exercise on how to build a survey form?</label>
+        <div class="right">
+          <ul class="list">
+            <label><input type="radio" name ="recomedation" Value="1"> Yes</label>
+            
+            <label><input type="radio" name="recomedation" Value="2"> No</label>
+            
+            <label><input type="radio" name="recomedation" Value="3"> Cannot say</label>
+            
+          </ul>
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset class="fieldset">
+      <div class="fieldset-group">
+        <label for="dropdown2" class="left">What do you like most in FCC</label>
+        <select id="dropdown2" class="right dropdown">
+          <option selected disabled>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="openSource">Open source</option>
+        </select>
+      </div>
+    </fieldset>
+ 
+    <fieldset class="fieldset">
+      <div class="fieldset-group">
+        <label for="comments" class="left">Any Comments/Suggestions?</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comment here..." rows="4" cols="30"></textarea>
+      </div>
+      
+      <label for="submit"><input class="button" type="Submit" value="submit" id="submit"></label>
+    </fieldset>
+  </form>
+</div>
